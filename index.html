@@ -3,32 +3,192 @@
 <head>
   <meta charset="UTF-8">
   <title>Minecraft szerverek.</title>
+  <style>
+        body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: rgb(141, 200, 219);
+      color: #222;
+    }
+    h1 {
+      background-image: url('cim hater 2.jpg');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      padding: 50px 20px;
+      text-align: center;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 50px;
+      margin: 0;
+    }
+    .server-list {
+      list-style: none;
+      padding: 0;
+      max-width: 900px;
+      margin: 30px auto;
+      display: grid;
+      gap: 15px;
+    }
+    .server-card {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      padding: 15px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+      transition: transform 0.25s ease, filter 0.25s ease, box-shadow 0.25s ease;
+      cursor: pointer;
+    }
+    .server-card img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 14px;
+    }
+    .server-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2);
+    }
+    .dimmed {
+      filter: brightness(0.65);
+      opacity: 0.6;
+    }
+    .server-name {
+      font-size: 28px;
+      margin: 0;
+    }
+    .server-list li {
+      margin: 0;
+    }
+    .info-table {
+      border-collapse: collapse;
+      width: 90%;
+      max-width: 900px;
+      margin: 25px auto;
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    }
+    .info-table th,
+    .info-table td {
+      padding: 14px 18px;
+      text-align: left;
+      font-size: 18px;
+    }
+    .info-table th {
+      background: #d3d3d3;
+      font-size: 20px;
+    }
+    .info-table tr:nth-child(even) {
+      background: #f9f9f9;
+    }
+    .footer {
+      max-width: 900px;
+      margin: 0 auto 40px;
+      padding: 16px;
+      background: rgba(2, 255, 238, 0.9);
+      border-radius: 14px;
+      font-size: 20px;
+      text-align: center;
+    }
+    .footer a {
+      color: #000;
+      text-decoration: underline;
+    }
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+    .modal-content {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      max-width: 400px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
+    .modal-content h2 {
+      margin-top: 0;
+      color: #333;
+    }
+    .modal-content p {
+      color: #555;
+      line-height: 1.5;
+    }
+    .close-btn {
+      background: #007bff;
+      color: #fff;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+    .close-btn:hover {
+      background: #0056b3;
+    }
+  </style>
 </head>
-<body style="background-color: rgb(141, 200, 219); background-size: cover;">
-  <h1 style="background-image: url('cim hater 2.jpg'); color: rgb(255, 255, 255); padding: 50px; text-align: center; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 50px;">Minecraft Szerverek.</h1>
-</body>
-</html> 
-<html> 
-  <body>
- <li style="color: rgb(255, 253, 253); font-size: 40px; background-color: rgb(145, 136, 136); padding: 10px;"><img src="broken script.jpg" alt="broken script" width="100" height="100" align="center"> - Broken Script</li>
- <li style="background-color: rgb(167, 30, 30);   color: rgb(255, 255, 255); padding: 10px; font-size: 40px;"><img src="fnaf.png" alt="Five Nights at Freddys kép" width="100" height="100" align="center"> - Five Nights at Freddys</li>
- <li style="color: rgb(255, 255, 255);  font-size: 40px; background-color: rgb(53, 206, 73); padding: 10px;"><img src="ChatGPT Image 9 mai 2026, 20_39_25.png" alt="Nyaradszereda kep" width="150" height="100" align="center"> - Nyaradszereda kozosegi szerver</li>
-  <table border="2" width="60%" align="center">
-   <tr bgcolor="lightgray">
-     <th style="font-size: 25px;">Szerver neve</th> <th style="font-size: 25px;">Ip cim</th> <th style="font-size: 25px;">Kezdes datuma</th>
-   </tr>
-   <tr bgcolor="white">
-     <td style="font-size: 20px;">Nyaradszereda kozosegi szerver</td> <td style="font-size: 20px;">lesz majd valami</td> <td style="font-size: 20px;">meg nem derult ki</td>
-   </tr>
-   <tr bgcolor="white">
-     <td style="font-size: 20px;">Broken Script</td> <td style="font-size: 20px;">lesz majd valami</td> <td style="font-size: 20px;"> meg nem derult ki</td>
-   </tr>
-   <tr bgcolor="white">
-     <td style="font-size: 20px;">Five Nights at Freddys</td> <td style="font-size: 20px;">lesz majd valami</td> <td style="font-size: 20px;">meg nem derult ki</td>
-   </tr>
- </table>
- <p style="background-color: rgb(2, 255, 238); font-size: 25px;">Ajánlásokat és visszajelzéseket a következő linken tudsz küldeni: <a href="https://docs.google.com/forms/d/e/1FAIpQLScZypkQv-Qkh5m8AC5YaF3ccTDsk5usAixYP4kVnNRHo7T9Aw/viewform" target="_blank">https://docs.google.com/forms/d/e/1FAIpQLScZypkQv-Qkh5m8AC5YaF3ccTDsk5usAixYP4kVnNRHo7T9Aw/viewform</a></p>
-  <meta name="description" content="Minecraft szerverek, ip cimek,egyszeru szerver">
-  <link rel="canonical" href="https://matyaskiss20232024-wq.github.io/MCR/">
+  <h1>Minecraft Szerverek</h1>
+
+  <ul class="server-list">
+    <li class="server-card" data-server="broken-script" data-description="A Broken Script egy izgalmas Minecraft szerver, ahol különleges script-ek és játékmódok várnak rád. Csatlakozz és fedezd fel a kreatív világokat!">
+      <img src="broken script.jpg" alt="Broken Script" />
+      <p class="server-name">Broken Script</p>
+    </li>
+    <li class="server-card" data-server="fnaf" data-description="Five Nights at Freddy's szerver: élvezd a horror elemeket és a túlélési kihívásokat Minecraft stílusban. Vigyázz, mert a játékosok nem az egyetlen veszély!">
+      <img src="fnaf.png" alt="Five Nights at Freddys" />
+      <p class="server-name">Five Nights at Freddys</p>
+    </li>
+    <li class="server-card" data-server="nyaradszereda" data-description="Nyaradszereda közösségi szerver: barátságos közösség, építkezés, játékok és események. Ideális hely a relaxáláshoz és új barátok szerzéséhez!">
+      <img src="nysz.jpg" alt="Nyaradszereda szerver" />
+      <p class="server-name">Nyaradszereda közösségi szerver</p>
+    </li>
+  </ul>
+
+  <table class="info-table">
+    <tr>
+      <th>Szerver neve</th>
+      <th>IP cím</th>
+      <th>Kezdés dátuma</th>
+    </tr>
+    <tr>
+      <td>Nyaradszereda közösségi szerver</td>
+      <td>lesz majd valami</td>
+      <td>még nem derült ki</td>
+    </tr>
+    <tr>
+      <td>Broken Script</td>
+      <td>lesz majd valami</td>
+      <td>még nem derült ki</td>
+    </tr>
+    <tr>
+      <td>Five Nights at Freddys</td>
+      <td>lesz majd valami</td>
+      <td>még nem derült ki</td>
+    </tr>
+  </table>
+
+  <p class="footer">Ajánlásokat és visszajelzéseket a következő linken tudsz küldeni: <a href="https://docs.google.com/forms/d/e/1FAIpQLScZypkQv-Qkh5m8AC5YaF3ccTDsk5usAixYP4kVnNRHo7T9Aw/viewform" target="_blank">Google űrlap</a></p>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <h2 id="modal-title"></h2>
+      <p id="modal-description"></p>
+      <button class="close-btn" onclick="closeModal()">Bezárás</button>
+    </div>
+  </div>
+
+  <script src="hajra.js"></script>
 </body>
 </html>
